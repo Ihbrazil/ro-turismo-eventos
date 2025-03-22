@@ -1,0 +1,515 @@
+.html, body {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #f9f9f9, #e0e0e0); /* Gradiente suave */
+  color: #333;
+  scroll-behavior: smooth; /* Rolagem suave */
+}
+
+/* Topo da página */
+.topo {
+  background: linear-gradient(to right, #1b3675, #27488b); /* Gradiente no cabeçalho */
+  border-bottom: 2px solid #fdb203;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+  transition: background-color 0.3s ease;
+}
+
+.links {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.links:hover {
+  color: #6b0f0f; /* Mudança de cor ao passar o mouse */
+}
+
+.container_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container_logo img {
+  width: 26px;
+  height: 26px;
+  margin-right: 10px;
+}
+
+.container_logo p {
+  color: #fff;
+  font-size: 26px;
+  text-decoration: none;
+}
+
+.container_img_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_img_logo img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Seção apresentação da página */
+.secao_apresentacao {
+  background: linear-gradient(to bottom, #1b3675, #1a2a5a);
+  padding: 120px 20px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.container_texto_apresentacao {
+  max-width: 1024px;
+  width: 100%;
+}
+
+.container_texto_apresentacao h1 {
+  color: #fdb203;
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+  margin-bottom: 20px;
+}
+
+.container_texto_apresentacao span {
+  font-weight: 500;
+}
+
+.secao_apresentacao p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+.lista_servicos {
+  max-width: 1024px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.lista_servicos li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 400px;
+  padding: 10px 0px;
+}
+
+.lista_servicos li img {
+  object-fit: contain;
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.lista_servicos li p {
+  display: flex;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.container_img_guia {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  display: flex;
+  object-fit: cover;
+}
+
+.container_img_guia img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Seção beneficios */
+.secao_beneficios {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px;
+  gap: 30px;
+}
+
+.secao_beneficios div h2 {
+  margin-bottom: 30px;
+}
+
+.lista_beneficios {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.lista_beneficios li {
+  padding: 10px 10px;
+  list-style: none;
+  text-align: left;
+  flex: 1 1 300px;
+}
+
+/* Seção destinos*/
+.secao_destinos {
+  padding: 50px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.container_destinos {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card_destinos {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gainsboro;
+}
+
+.card_destinos h3 {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 15px 0px;
+}
+
+.card_destinos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card_destinos p {
+  line-height: 25px;
+  letter-spacing: 1px;
+  padding: 0px 20px 20px;
+  font-style: italic;
+}
+
+.moldura {
+  display: flex;
+  flex: 1 1 200px;
+  flex-direction: column;
+  border-radius: 8px;
+  height: 350px;
+  background-color: gainsboro;
+  padding: 15px 15px;
+}
+
+.subtitulo {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 15px 0px;
+}
+
+.info {
+  line-height: 25px;
+  letter-spacing: 1px;
+  padding: 0px 20px 20px;
+  font-style: italic;
+}
+
+/* Seção de contatos */
+.secao_informacoes {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px;
+  gap: 30px;
+}
+
+.container_informacoes {
+  max-width: 1024px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.lista_horarios {
+  list-style-type: none; /* Remove os marcadores da lista */
+  line-height: 30px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.lista_horarios li {
+  font-size: 14px;
+}
+
+.agenda {
+  line-height: 20px;
+  text-align: center;
+}
+
+.agenda p {
+  margin-top: 10px;
+}
+
+.agenda_telefones {
+  margin-top: 30px;
+  list-style-type: none; /* Remove os marcadores da lista */
+  text-align: center;
+  align-items: center; /* Centraliza os itens verticalmente */
+  gap: 15px; /* Adiciona espaçamento entre os itens na lista */
+}
+
+.agenda_telefones li {
+  display: flex; /* Alinha ícone e texto em linha */
+  align-items: center; /* Centraliza verticalmente o conteúdo */
+  justify-content: center; /* Centraliza horizontalmente o conteúdo */
+}
+
+.icone_whatsapp {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px; /* Distância entre o ícone e o texto */
+  vertical-align: 100%; /* Alinha o ícone ao centro */
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid gainsboro;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.card figure {
+  flex: 1 1 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+}
+
+.card div {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  font-size: 14px;
+}
+
+/* Seção Redes Sociais */
+.secao_redes_sociais {
+  background-color: #b20678;
+  padding: 120px 20px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.container_texto_redes_sociais {
+  max-width: 1024px;
+  width: 100%;
+}
+
+.container_texto_redes_sociais h1 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+  margin-bottom: 20px;
+}
+
+.container_texto_redes_sociais span {
+  font-weight: 500;
+}
+
+.secao_redes_sociais p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+.icone_redes_sociais {
+  width: 30px;
+  height: 30px;
+  margin-top: 5%;
+}
+
+/* Seção localização */
+.secao_localizacao {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.secao_localizacao div {
+  padding: 0 20px;
+}
+
+.secao_localizacao div h2 {
+  line-height: 50px;
+  padding-bottom: 20px;
+}
+
+/* Rodapé da página */
+.rodape {
+  background-color: #171d3f;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+/* Classes para os subtitulos */
+.subtitulo {
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+}
+
+.subtitulo span {
+  font-weight: 500;
+}
+
+
+/* Configuração para dispositivos móveis (tela pequena) */
+@media only screen and (max-width: 600px) {
+  .container_logo {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container_logo p {
+    font-size: 20px;
+    justify-content: center;
+  }
+
+  .container_texto_apresentacao h1 {
+    font-size: 24px;
+  }
+
+  .container_texto_apresentacao p {
+    font-size: 16px;
+  }
+
+  .lista_servicos li {
+    flex: 1 1 100%; /* Cada item ocupa a linha toda */
+  }
+
+  .lista_beneficios li {
+    flex: 1 1 100%;
+  }
+
+  .card_destinos {
+      flex: 1 1 100%; /* Ocupa a largura total da tela */
+  }
+  
+  .card_destinos h3 {
+    font-size: 18px; /* Reduz o tamanho da fonte para melhor adaptação */
+  }
+  
+  .card_destinos p {
+    font-size: 14px; /* Ajusta o tamanho do texto */
+    padding: 0px 10px 10px; /* Menor espaçamento interno */
+  }
+
+}
+
+/* Configuração para tablets (tela média) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .container_logo p {
+    font-size: 24px;
+  }
+
+  .container_texto_apresentacao h1 {
+    font-size: 28px;
+  }
+
+  .container_texto_apresentacao p {
+    font-size: 18px;
+  }
+
+  .lista_servicos li {
+    flex: 1 1 48%; /* Dois itens por linha */
+  }
+
+  .lista_beneficios li {
+    flex: 1 1 48%;
+  }
+
+  .card_destinos {
+    flex: 1 1 48%; /* Dois cartões por linha */
+  }
+
+  .card_destinos h3 {
+    font-size: 20px; /* Ajuste intermediário do texto */
+  }
+
+  .card_destinos p {
+    font-size: 16px;
+    padding: 0px 15px 15px; /* Ajuste do espaçamento */
+  }
+}
+
+/* Configuração para desktops (tela grande) */
+@media only screen and (min-width: 1025px) {
+  .container_logo p {
+    font-size: 26px;
+  }
+
+  .container_texto_apresentacao h1 {
+    font-size: 30px;
+  }
+
+  .container_texto_apresentacao p {
+    font-size: 20px;
+  }
+
+  .lista_servicos li {
+    flex: 1 1 30%; /* Três itens por linha */
+  }
+
+  .lista_beneficios li {
+    flex: 1 1 30%;
+  }
+
+  .card_destinos {
+    flex: 1 1 300px; /* Define tamanho fixo */
+  }
+
+  .card_destinos h3 {
+    font-size: 24px; /* Mantém o tamanho original */
+  }
+
+  .card_destinos p {
+    font-size: 18px; /* Texto confortável para telas maiores */
+    padding: 0px 20px 20px; /* Espaçamento padrão */
+  }
+}

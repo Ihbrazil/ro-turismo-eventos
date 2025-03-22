@@ -1,0 +1,2 @@
+# ro-turismo-eventos
+ Checkpoint Final Front-End  DevMedia: O site da Rô Turismo e Eventos é dedicado a oferecer experiências únicas em turismo e eventos. Ele apresenta pacotes turísticos personalizados, informações sobre destinos incríveis e serviços especializados, como guias qualificados e atendimento personalizado. Com um design acolhedor e funcional, o site facilita a navegação para explorar opções de viagens, promoções e detalhes de contato, garantindo que cada cliente encontre a experiência perfeita para suas necessidades.
