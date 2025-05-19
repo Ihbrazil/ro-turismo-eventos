@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./CSS/estilos.css">
     <link rel="stylesheet" href="./CSS/responsivo_celular.css">
     <link rel="stylesheet" href="./CSS/responsivo_tablet.css">
+    <link rel="stylesheet" href="./CSS/carrossel.css">
     <title>Rô Turismo e Eventos</title>
 </head>
 <body>
@@ -90,13 +91,27 @@
     <h2 class="subtitulo">
     Seu <span>sonho</span>, nossa <span>missão</span>!
     </h2>
-      <figure class="container_img_divulgacao">
+      <div class="carousel-container">
+        <img 
+            src="img/carrocel/Chile.jpeg"
+            class="carousel-slide active"
+            alt="Slide 1"
+            title="Divulgação de viagens e Eventos">
         <img
-          src="./img/Chile.png"
-          alt="Divulgação de viagens e Eventos"
-          title="Divulgação de viagens e Eventos"
-        />
-      </figure>
+            src="img/carrocel/São Lourenço.jpeg"
+            class="carousel-slide"
+            alt="Slide 2"
+            title="Divulgação de viagens e Eventos">
+        <img
+            src="img/carrocel/Salvador.jpeg"
+            class="carousel-slide"
+            alt="Slide 3"
+            title="Divulgação de viagens e Eventos">
+        <div class="carousel-controls">
+            <button class="carousel-btn" id="prevBtn">Anterior</button>
+            <button class="carousel-btn" id="nextBtn">Próximo</button>
+        </div>
+      </div>
     </div>
 
     <ul class="lista_beneficios">
@@ -302,5 +317,6 @@
     </div>
   </footer>
   <!-- Fim do rodapé -->
+  <script src="js/scripts.js"></script>
 </body>
 </html>
