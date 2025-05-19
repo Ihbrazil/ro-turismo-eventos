@@ -39,3 +39,41 @@
     background: #ccc;
     cursor: not-allowed;
 }
+
+/* Configuração para dispositivos móveis (tela pequena) */
+@media only screen and (max-width: 480px) {
+    .carousel-container {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .carousel-btn {
+        width: 80px;
+        font-size: 12px;
+    }
+
+    .carousel-controls {
+        margin: 5px 0;
+    }
+}
+
+/* Configuração para tablets (tela média) */
+  @media only screen and (max-width: 768px) {
+    .carousel-container {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .carousel-slide {
+        height: auto;
+    }
+
+    .carousel-controls {
+        margin: 10px 0;
+    }
+
+    .carousel-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
