@@ -1,0 +1,59 @@
+.navbar {
+    background: #333;
+    background: linear-gradient(to left, rgba(27, 54, 117, 0.8), rgba(178, 6, 120, 0.8)); /* Gradiente no cabeçalho */
+    /*background: #b20678;*/
+    color: #fff;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar .menu {
+    display: flex;
+    gap: 1rem;
+}
+.navbar .menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+.navbar .menu a:hover {
+    background: #444;
+}
+.navbar .sanduiche {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+.navbar .sanduiche span {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+    display: block;
+}
+@media (max-width: 700px) {
+    .navbar .menu {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 180px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .navbar .menu.active {
+        display: flex;
+    }
+    .navbar .sanduiche {
+        display: flex;
+    }
+}

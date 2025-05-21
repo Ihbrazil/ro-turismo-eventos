@@ -8,7 +8,7 @@
     }
   
     .container_logo {
-      flex-direction: column; /* Alinha os elementos em coluna */
+      flex-direction: row; /* Alinha os elementos em coluna */
       padding: 10px; /* Reduz o padding */
     }
   

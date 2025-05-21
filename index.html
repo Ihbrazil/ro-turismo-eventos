@@ -20,16 +20,40 @@
     <link rel="stylesheet" href="./CSS/responsivo_celular.css">
     <link rel="stylesheet" href="./CSS/responsivo_tablet.css">
     <link rel="stylesheet" href="./CSS/carrossel.css">
+    <link rel="stylesheet" href="./CSS/menu_sanduiche.css">
     <title>Rô Turismo e Eventos</title>
 </head>
 <body>
+    <header class="topo">
+        <!-- Menu Sanduiche -->
+        <nav class="navbar">
+            <div class="container_logo">
+              <img src="img/logox.png" alt="logo Rô Turismo e Eventos" title="logo Rô Turismo e Eventos">
+              <p>Rô Turismo e Eventos</p>
+            </div>
+            <div class="menu" id="menu">
+                <a href="#">Home</a>
+                <a href="#">Sobre</a>
+                <a href="#">Serviços</a>
+                <a href="#">Contato</a>
+            </div>
+            <div class="sanduiche" id="sanduiche" aria-label="Open menu" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <!-- Fim do menu Sanduiche -->
+    </header>
+
+<!--
     <header class="topo">
         <div class="container_logo">
             <img src="img/logo.png" alt="logo Rô Turismo e Eventos" title="logo Rô Turismo e Eventos">
             <p>Rô Turismo e Eventos</p>
         </div>
     </header>
-      
+  -->      
   <!-- Apresentação -->
   <section class="secao_apresentacao">
     <div class="container_texto_apresentacao">
@@ -40,7 +64,6 @@
       Confira abaixo todas as opções de turismo e eventos que temos à sua disposição!
       </p>
     </div>
-
     <ul class="lista_servicos">
       <li>
         <img src="./img/icon_mark_purple.png" />
@@ -313,10 +336,11 @@
       Pacotes Turísticos - Eventos Corporativos - Guias Turísticos - Eventos Sociais
     </div>
     <div>
-      © Copyright 2025 | Rô Turismo e Eventos
+      © Copyright 2025 | ihbrazil Full Stack Developer
     </div>
   </footer>
   <!-- Fim do rodapé -->
-  <script src="js/scripts.js"></script>
+  <script src="js/scriptsCarrossel.js"></script>
+  <script src="js/menuSaduiche.js"></script>
 </body>
 </html>
