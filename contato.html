@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com a Agência Rô Turismo e Eventos. Solicite informações, tire dúvidas ou faça seu orçamento para turismo e eventos.">
+    <meta name="keywords" content="Contato, Turismo, Eventos, Viagens, Agência, Rô Turismo e Eventos">
+    <meta name="author" content="ihbrazil Full Stack Developer">
+    <link rel="icon" href="./img/icones/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/estilos.css">
+    <link rel="stylesheet" href="./CSS/responsivo_celular.css">
+    <link rel="stylesheet" href="./CSS/responsivo_tablet.css">
+    <link rel="stylesheet" href="./CSS/carrossel.css">
+    <link rel="stylesheet" href="./CSS/menu_sanduiche.css">
+    <title>Contato | Rô Turismo e Eventos</title>
+    <style>
+        /* Estilização aprimorada para maior profissionalismo */
+        .secao_contato {
+            max-width: 900px;
+            margin: 50px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 30px;
+            text-align: center;
+        }
+
+        .secao_contato h2 {
+            color: #1b3675;
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+
+        .secao_contato p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .form-contato {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .form-contato input,
+        .form-contato textarea {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+            resize: none;
+        }
+
+        .form-contato button {
+            background: #1b3675;
+            color: #fff;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .form-contato button:hover {
+            background: #fdb203;
+            color: #1b3675;
+        }
+
+        .info-contato {
+            margin-top: 35px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .info-contato a {
+            color: #1b3675;
+            text-decoration: none;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .secao_contato {
+                padding: 20px;
+            }
+
+            .form-contato {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Início do cabeçalho -->
+    <header class="topo">
+        <nav class="navbar">
+            <div class="container_logo">
+                <img src="img/logox.png" alt="logo Rô Turismo e Eventos" title="logo Rô Turismo e Eventos">
+                <p>Rô Turismo e Eventos</p>
+            </div>
+            <div class="menu" id="menu">
+                <a href="./index.html">Home</a>
+                <a href="./sobre.html">Sobre</a>
+                <a href="./servicos.html">Serviços</a>
+                <a href="./contato.html">Contato</a>
+            </div>
+            <div class="sanduiche" id="sanduiche" aria-label="Open menu" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <!-- Fim do cabeçalho -->
+
+    <!-- Início do conteúdo principal -->
+    <main>
+        <section class="secao_apresentacao">
+            <div class="container_texto_apresentacao">
+                <h1>Fale Conosco</h1>
+                <p>Preencha o formulário abaixo para solicitar informações, tirar dúvidas ou fazer seu orçamento. Nossa equipe retornará o mais breve possível!</p>
+            </div>
+        </section>
+        <!-- Seção de contato -->
+        <section class="secao_contato">
+                <form
+                    action="mailto:agenciaroturismo@gmail.com"
+                    method="post"
+                    enctype="text/plain"
+                    class="form-contato"
+                    >
+                    <input type="text" name="nome" placeholder="Seu nome" required>
+                    <input type="email" name="email" placeholder="Seu e-mail" required>
+                    <input type="tel" name="telefone" placeholder="Seu telefone (opcional)">
+                    <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+                    <button
+                        type="submit">
+                        Enviar
+                    </button>
+                </form>
+                <div class="info-contato">
+                    <p><strong>E-mail:</strong> <a href="mailto:contato@roturismoeventos.com.br">agenciaroturismo@gmail.com</a></p>
+                    <p><strong>WhatsApp Rosania (RÔ):</strong> <a href="https://wa.me/5532988247467" target="_blank">(32) 98824-7467</a></p>
+                    <p><strong>WhatsApp Maria Fernanda:</strong> <a href="https://wa.me/5532988247467" target="_blank">(32) 98706-1247</a></p>
+                </div>
+            </div>
+        </section>
+        <!-- Seção localização -->
+        <section class="secao_localizacao">
+            <div id="contatos">
+                <h2 class="subtitulo">
+                    <span>Endereço: </span>
+                </h2>
+                <p>
+                    R. Alves Júnior, 51 - Manoel Honório, Juiz de Fora - MG, 36045-150
+                </p>
+            </div>
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3706.012966711975!2d-43.358137824217785!3d-21.741022997251537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989d00174ab5f3%3A0xe6841b349debecfd!2sR%C3%B4%20Turismo%20e%20Eventos!5e0!3m2!1spt-BR!2sbr!4v1742128128143!5m2!1spt-BR!2sbr" width="100%" height="350" >
+            </iframe>  
+        </section>
+        <!-- Fim da seção localização -->
+        </main>
+        <!-- Fim do conteúdo principal -->
+
+        <!-- Rodapé -->
+        <footer class="rodape">
+            <div>
+                Pacotes Turísticos - Eventos Corporativos - Guias Turísticos - Eventos Sociais
+            </div>
+            <div>
+                © Copyright 2025 | ihbrazil Full Stack developer
+            </div>
+        </footer>
+        <!-- Fim do rodapé -->
+
+        <!-- Scripts -->
+        <script src="js/scriptsCarrossel.js"></script>
+        <script src="js/menuSaduiche.js"></script>
+</body>
+</html>

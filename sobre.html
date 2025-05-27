@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Descubra na Agência Rô Turismo e Eventos o melhor em Turismo e Eventos! Destinos e Organização de eventos de alta qualidade para garantir a sua satisfação e bem-estar. Conheça agora! #Turismo #Eventos #Viagens #Agência #RôTurismoeEventos">
+    <meta
+      name="keywords"
+      content="Sobre, Turismo, Eventos, Viagens, Agência, Rô Turismo e Eventos">
+    <meta
+      name="author"
+      content="ihbrazil Full Stack Developer">
+    <link rel="icon" href="./img/icones/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/estilos.css">
+    <link rel="stylesheet" href="./CSS/responsivo_celular.css">
+    <link rel="stylesheet" href="./CSS/responsivo_tablet.css">
+    <link rel="stylesheet" href="./CSS/carrossel.css">
+    <link rel="stylesheet" href="./CSS/menu_sanduiche.css">
+    <title>Sobre | Rô Turismo e Eventos</title>
+    <style>
+    /* Estilos adicionais para a página Sobre */
+    .sobre-img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .secao_apresentacao h2 {
+        color: #1b3675;
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+
+    .secao_apresentacao p {
+        font-size: 18px;
+        color: #555;
+        line-height: 1.8;
+        margin-bottom: 15px;
+    }
+
+    /* Missão, Visão e Valores */
+    .secao_missao_visao_valores {
+        max-width: 900px;
+        margin: 50px auto;
+        text-align: center;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .secao_missao_visao_valores h2 {
+        color: #1b3675;
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .secao_missao_visao_valores div {
+        margin-bottom: 20px;
+        padding: 15px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .secao_missao_visao_valores h3 {
+        color: #fdb203;
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .secao_missao_visao_valores ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .secao_missao_visao_valores li {
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 8px;
+    }
+
+    /* Equipe */
+    .secao_equipe {
+        max-width: 900px;
+        margin: 50px auto;
+        text-align: center;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .equipe-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .membro-equipe {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        max-width: 280px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .membro-equipe:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .membro-equipe img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 12px;
+    }
+
+    .membro-equipe h3 {
+        color: #1b3675;
+        font-size: 20px;
+    }
+
+    .membro-equipe p {
+        color: #555;
+        font-size: 16px;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+        .equipe-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .membro-equipe {
+            max-width: 100%;
+        }
+
+        .secao_apresentacao,
+        .secao_missao_visao_valores,
+        .secao_equipe {
+            padding: 20px;
+        }
+    }
+</style>
+
+    <!-- Fim dos estilos adicionais -->
+</head>
+<body>
+    <!-- Início do cabeçalho -->
+    <header class="topo">
+        <!-- Menu Sanduiche -->
+        <nav class="navbar">
+            <div class="container_logo">
+              <img src="img/logox.png" alt="logo Rô Turismo e Eventos" title="logo Rô Turismo e Eventos">
+              <p>Rô Turismo e Eventos</p>
+            </div>
+            <div class="menu" id="menu">
+                <a href="index.html">Home</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="contato.html">Contato</a>
+            </div>
+            <div class="sanduiche" id="sanduiche" aria-label="Open menu" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <!-- Fim do menu Sanduiche -->
+    </header>
+    <!-- Fim do cabeçalho -->
+
+    <!-- Início do conteúdo principal -->
+    <main>
+        <!-- Apresentação -->
+        <section class="secao_apresentacao">
+            <div class="container_texto_apresentacao">
+                <img src="img/sobre-nos.png" alt="Equipe Rô Turismo e Eventos" class="sobre-img">
+                <h1> Bem-vindo à Rô Turismo e Eventos!</h1>
+            </div>
+        </section>
+        <!-- Fim da apresentação -->
+        
+        <!-- Missão, Visão e Valores -->
+        <section class="secao_missao_visao_valores">
+            <h2>Missão, Visão e Valores</h2>
+            <div class="missao">
+                <h3>Missão</h3>
+                <p>
+                    Proporcionar experiências únicas e memoráveis através de turismo e eventos personalizados, sempre com foco na satisfação do cliente.
+                </p>
+            </div>
+            <div class="visao">
+                <h3>Visão</h3>
+                <p>
+                    Ser reconhecida como a principal agência de turismo e eventos do Brasil, destacando-se pela qualidade dos serviços e inovação.
+                </p>
+            </div>
+            <div class="valores">
+                <h3>Valores</h3>
+                <ul>
+                    <li>Compromisso com a qualidade</li>
+                    <li>Transparência e ética</li>
+                    <li>Inovação constante</li>
+                    <li>Respeito ao meio ambiente</li>
+                    <li>Valorização da cultura local</li>
+                </ul>
+            </div>
+        </section>
+        <!-- Fim da Missão, Visão e Valores -->
+        <!-- Equipe -->
+        <section class="secao_equipe">
+            <h2>Nossa Equipe</h2>
+            <div class="equipe-container">
+                <div class="membro-equipe">
+                    <img src="img/rosania.png" alt="Rosania da Silva">
+                    <h3>Rosania da Silva</h3>
+                    <p>Especialista em Turismo Nacional e Internacional</p>
+                </div>
+                <div class="membro-equipe">
+                    <img src="img/maria.png" alt="Maria Fernanda">
+                    <h3>Maria Fernanda</h3>
+                    <p>Coordenadora de Eventos</p>
+                </div>
+            </div>
+        </section>
+        <!-- Fim da Equipe -->
+    </main>
+    <!-- Fim do conteúdo principal -->
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div>
+            Pacotes Turísticos - Eventos Corporativos - Guias Turísticos - Eventos Sociais
+        </div>
+        <div>
+            © Copyright 2025 | ihbrazil Full Stack developer
+        </div>
+    </footer>
+    <!-- Fim do rodapé -->
+    
+    <!-- Scripts -->
+    <script src="js/scriptsCarrossel.js"></script>
+    <script src="js/menuSaduiche.js"></script>
+    <!-- Fim dos scripts -->
+</body>
+</html>

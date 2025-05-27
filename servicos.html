@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Conheça os serviços da Rô Turismo e Eventos: pacotes turísticos, organização de eventos, traslados, reservas e muito mais. Soluções completas para sua viagem ou evento!">
+    <meta
+      name="keywords"
+      content="Serviços, Turismo, Eventos, Pacotes, Traslados, Reservas, Agência, Rô Turismo e Eventos">
+    <meta
+      name="author"
+      content="ihbrazil Full Stack Developer">
+    <link rel="icon" href="./img/icones/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/estilos.css">
+    <link rel="stylesheet" href="./CSS/responsivo_celular.css">
+    <link rel="stylesheet" href="./CSS/responsivo_tablet.css">
+    <link rel="stylesheet" href="./CSS/carrossel.css">
+    <link rel="stylesheet" href="./CSS/menu_sanduiche.css">
+    <title>Serviços | Rô Turismo e Eventos</title>
+    <style>
+    .secao_servicos {
+        background-color: #fff;
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    .secao_servicos h1 {
+        color: #1b3675;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .servicos-lista {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 30px;
+    }
+    .servico-item {
+        background: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+        padding: 24px 18px;
+        max-width: 260px;
+        flex: 1 1 220px;
+        text-align: center;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .servico-item:hover {
+        transform: translateY(-5px) scale(1.03);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.13);
+    }
+    .servico-item img {
+        width: 100%;
+        max-width: 200%;
+        height: auto;
+        margin-bottom: 14px;
+    }
+    .servico-item h2 {
+        color: #fdb203;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .servico-item p {
+        color: #555;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    @media (max-width: 768px) {
+        .servicos-lista {
+            flex-direction: column;
+            align-items: center;
+        }
+        .secao_servicos {
+            padding: 20px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <!-- Início do cabeçalho -->
+    <header class="topo">
+        <nav class="navbar">
+            <div class="container_logo">
+              <img src="img/logox.png" alt="logo Rô Turismo e Eventos" title="logo Rô Turismo e Eventos">
+              <p>Rô Turismo e Eventos</p>
+            </div>
+            <div class="menu" id="menu">
+                <a href="index.html">Home</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="contato.html">Contato</a>
+            </div>
+            <div class="sanduiche" id="sanduiche" aria-label="Open menu" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <!-- Fim do cabeçalho -->
+
+    <!-- Início do conteúdo principal -->
+    <main>
+        <section class="secao_apresentacao">
+            <div class="container_texto_apresentacao">
+                <h1>Nossos Serviços</h1>
+                <p>Oferecemos soluções completas para tornar sua viagem ou evento inesquecível. Confira nossos principais serviços:</p>
+                <div class="servicos-lista">
+                    <div class="servico-item">
+                        <img src="img/servicos/pacotes-turisticos.png" alt="Pacotes Turísticos">
+                        <h2>Pacotes Turísticos</h2>
+                        <p>Viagens nacionais e internacionais, roteiros personalizados, excursões em grupo e viagens sob medida.</p>
+                    </div>
+                    
+                    <div class="servico-item">
+                        <img src="img/servicos/eventos-corporativos.png" alt="Eventos Corporativos">
+                        <h2>Eventos Corporativos</h2>
+                        <p>Organização de congressos, feiras, treinamentos, workshops e eventos empresariais completos.</p>
+                    </div>
+                    
+                    <div class="servico-item">
+                        <img src="img/servicos/eventos-sociais.png" alt="Eventos Sociais">
+                        <h2>Eventos Sociais</h2>
+                        <p>Planejamento e execução de casamentos, aniversários, formaturas e celebrações especiais.</p>
+                    </div>
+
+                    <div class="servico-item">
+                        <img src="img/rosania.png" alt="Guias Turísticos">
+                        <h2>Guias Turísticos</h2>
+                        <p>Guias experientes para passeios culturais, históricos, ecológicos e city tours.</p>
+                    </div>
+                    
+                    <div class="servico-item">
+                        <img src="img/servicos/traslados.png" alt="Traslados e Transfers">
+                        <h2>Traslados e Transfers</h2>
+                        <p>Serviço de transporte seguro e confortável para aeroportos, hotéis e eventos.</p>
+                    </div>
+                    
+                    <div class="servico-item">
+                        <img src="img/servicos/reservas.png" alt="Reservas">
+                        <h2>Reservas</h2>
+                        <p>Reservas de hotéis, passagens aéreas, ingressos para atrações e restaurantes.</p>
+                    </div>
+
+                    <div class="servico-item">
+                        <img src="img/servicos/consultoria.png" alt="Consultoria de Viagens">
+                        <h2>Consultoria de Viagens</h2>
+                        <p>Assessoria completa para planejamento de viagens, desde a escolha do destino até o retorno.</p>
+                    </div>
+                    <div class="servico-item">
+                        <img src="img/servicos/planejamento.png" alt="Planejamento de Eventos">
+                        <h2>Planejamento de Eventos</h2>
+                        <p>Consultoria e planejamento detalhado para garantir o sucesso do seu evento.</p>
+                    </div>
+                    <div class="servico-item">
+                        <img src="img/servicos/apoio-logistico.png" alt="Apoio Logístico">
+                        <h2>Apoio Logístico</h2>
+                        <p>Gerenciamento de logística para eventos, incluindo transporte, hospedagem e alimentação.</p>
+                    </div>
+                    <div>
+                        <iframe src="https://www.instagram.com/p/DF3ugrMvyzs/embed" width="400" height="500" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                    </div>
+                    <div>
+                        <iframe src="https://www.instagram.com/p/DJSvBCexcqX/embed/" width="400" height="500" frameborder="0" scrolling="no"allowtransparency="true"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Fim do conteúdo principal -->
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div>
+            Pacotes Turísticos - Eventos Corporativos - Guias Turísticos - Eventos Sociais
+        </div>
+        <div>
+            © Copyright 2025 | ihbrazil Full Stack developer
+        </div>
+    </footer>
+    <!-- Fim do rodapé -->
+
+    <!-- Scripts -->
+    <script src="js/scriptsCarrossel.js"></script>
+    <script src="js/menuSaduiche.js"></script>
+    <!-- Fim dos scripts -->
+</body>
+</html>
