@@ -50,6 +50,29 @@
     font-size: 16px;
     line-height: 1.6;
 }
+.icone_whatsapp_servicos {
+    margin-top: 20px;
+    width: 30px;
+    height: 30px;
+    max-width: 30px;
+    max-height: 30px;
+    display: block;
+    object-fit: contain; /* Garante que a imagem não estique */
+    transition: transform 0.2s;
+    cursor: pointer;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+
+.icone_whatsapp_servicos {
+    width: 30px;
+    height: 30px;
+    display: block;
+    max-width: 100%;
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
     .servicos-lista {
         flex-direction: column;
