@@ -50,10 +50,10 @@
 }
 
 .form-contato button:hover {
-    background: #fdb203;
-    color: #1b3675;
+    background: linear-gradient(to right, #8a065a, #1b3675);
+    color: #FF69B4;
 }
-
+/*
 .info-contato {
     margin-top: 35px;
     font-size: 16px;
@@ -65,7 +65,7 @@
     text-decoration: none;
     text-decoration: underline;
 }
-
+*/
 /* Responsividade */
 @media (max-width: 768px) {
     .secao_contato {
