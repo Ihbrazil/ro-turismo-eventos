@@ -1,78 +1,50 @@
 /* Estilos adicionais para a seção de contato */
 .secao_contato {
-    max-width: 900px;
+    max-width: 100%;
+    width: 90%;
     margin: 50px auto;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 30px;
     text-align: center;
-}
-
-.secao_contato h2 {
-    color: #1b3675;
-    font-size: 26px;
-    margin-bottom: 15px;
-}
-
-.secao_contato p {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 25px;
+    overflow: visible;
 }
 
 .form-contato {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.form-contato input,
-.form-contato textarea {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-    resize: none;
-}
-
-.form-contato button {
-    background: #1b3675;
-    color: #fff;
     border: none;
-    padding: 12px;
-    border-radius: 6px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background 0.2s;
+    width: 100%;
+    max-width: 900px;
+    height: 480px;
+    margin: 0 auto;
+    overflow: hidden;
+    overflow-y: auto;
 }
 
-.form-contato button:hover {
-    background: #fdb203;
-    color: #1b3675;
-}
-
-.info-contato {
-    margin-top: 35px;
-    font-size: 16px;
-    color: #555;
-}
-
-.info-contato a {
-    color: #1b3675;
-    text-decoration: none;
-    text-decoration: underline;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .secao_contato {
-        padding: 20px;
-    }
-
+@media screen and (max-width: 768px) { /* Celulares */
     .form-contato {
         max-width: 100%;
+        height: 400px; /* Reduz altura para telas menores */
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) { /* Tablets */
+    .form-contato {
+        max-width: 100%;
+        height: 900px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1199px) { /* Desktops médios */
+    .form-contato {
+        max-width: 800px;
+        height: 900px;
+    }
+}
+
+@media screen and (min-width: 1200px) { /* Telas grandes */
+    .form-contato {
+        max-width: 900px;
+        height: 900px; /* Ajusta altura para telas maiores */
     }
 }

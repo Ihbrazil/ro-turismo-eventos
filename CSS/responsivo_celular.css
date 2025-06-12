@@ -199,14 +199,20 @@
     }
   
     .agenda_telefones li {
-      flex-direction: column; /* Alinha os ícones e o texto em coluna */
-      text-align: center; /* Centraliza os itens */
+      flex-direction: row; /* Alinha os itens verticalmente */
+      text-align: center; /* Centraliza o conteúdo */
+      align-items: center;
     }
-  
+
+    .agenda_telefones li a {
+      font-size: 16px; /* Reduz o tamanho da fonte para melhor encaixe */
+      padding: 1%;
+      align-items: center;
+    }
+
     .icone_whatsapp {
-      width: 25px; /* Reduz o tamanho do ícone */
-      height: 25px;
-      margin-bottom: 5px; /* Espaçamento entre o ícone e o texto */
+      width: 25px;
+      height: 25px; /* Ajusta o tamanho para telas menores */
     }
   
     .card {
@@ -251,12 +257,6 @@
         font-size: 16px; /* Texto menor para telas pequenas */
         line-height: 1.4em; /* Ajusta o espaçamento entre linhas */
         padding: 0 10px; /* Adiciona espaçamento interno */
-      }
-    
-      .icone_redes_sociais {
-        width: 25px; /* Reduz o tamanho do ícone */
-        height: 25px;
-        margin-top: 3%; /* Ajusta o espaçamento acima do ícone */
       }
     
     /* Seção localização */  
