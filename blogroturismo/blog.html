@@ -1,197 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog | Rô Turismo e Eventos</title>
-  <meta charset="UTF-8" />
-  <meta name="description" content="Descubra os melhores destinos e eventos com a Rô Turismo e Eventos." />
-  <meta name="keywords" content="turismo, viagens, eventos, destinos" />
-  <link rel="icon" href="../img/icones/favicon.ico" type="image/x-icon" />
-  <style>
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    color: #333;
-  }
+    <!-- Google tag (gtag.js) -->
+    <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-PPEZE0S5LB">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-  header {
-    background: linear-gradient(90deg, #0044cc 0%, #0066ff 100%);
-    color: #fff;
-    text-align: center;
-    padding: 20px 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  header h1 {
-    font-size: 2.2em;
-    margin: 0;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  }
-
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 15px 0 0;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-  }
-
-  nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 8px 16px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
-
-  nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-
-  .banner {
-    background: url("img/blogroturismo-2.jpg") no-repeat center;
-    background-size: cover;
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    padding: 0 20px;
-    position: relative;
-  }
-
-  .banner::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.1));
-    z-index: 1;
-  }
-
-  .banner h2 {
-    font-size: 2.5em;
-    font-weight: 700;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-    position: relative;
-    z-index: 2;
-  }
-
-  main {
-    padding: 40px 20px;
-  }
-
-  article {
-    background-color: #fff;
-    margin-bottom: 30px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
-    transition: transform 0.2s ease;
-  }
-
-  article:hover {
-    transform: scale(1.01);
-  }
-
-  article h3 {
-    color: #0044cc;
-    margin-top: 0;
-    font-size: 1.4em;
-  }
-
-  article p {
-    color: #555;
-    line-height: 1.6;
-  }
-
-  article a {
-    display: inline-block;
-    margin-top: 12px;
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-
-  article a:hover {
-    color: #0056b3;
-    text-decoration: underline;
-  }
-
-  figcaption {
-    font-style: italic;
-    margin-top: 8px;
-  }
-
-  footer {
-    background-color: #0044cc;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px 10px;
-    margin-top: 60px;
-    font-size: 0.95rem;
-  }
-
-  footer a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  footer a:hover {
-    text-decoration: underline;
-  }
-
-  /* WhatsApp Floating Button */
-  .whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 999;
-    background-color: #25d366;
-    padding: 12px;
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    transition: transform 0.3s ease;
-  }
-
-  .whatsapp-float:hover {
-    transform: scale(1.1);
-  }
-
-  .whatsapp-float img {
-    width: 32px;
-    height: 32px;
-  }
-
-
-  @media (max-width: 600px) {
-    header h1 {
-      font-size: 1.8em;
-    }
-
-    .banner h2 {
-      font-size: 1.8em;
-    }
-
-    nav ul {
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    main {
-      padding: 20px;
-    }
-  }
-</style>
-
+        gtag('config', 'G-PPEZE0S5LB');
+    </script>
+    <!-- Fim do Google tag (gtag.js) -->
+    <!-- Meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra os melhores destinos e eventos com a Rô Turismo e Eventos." />
+    <meta name="keywords" content="turismo, viagens, eventos, destinos" />
+    <link rel="icon" href="../img/icones/favicon.ico" type="image/x-icon" />
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/blog.css">
+    <!-- Título da página -->
+    <title>Blog Rô Turismo</title>
 </head>
 <body>
 

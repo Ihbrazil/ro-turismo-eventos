@@ -1,257 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog | Rô Turismo e Eventos</title>
-  <meta charset="UTF-8" />
-  <meta name="description" content="Descubra os melhores destinos e eventos com a Rô Turismo e Eventos." />
-  <meta name="keywords" content="turismo, viagens, eventos, destinos" />
-  <link rel="icon" href="../img/icones/favicon.ico" type="image/x-icon" />
-  <style>
-    body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f8f9fa;
-  color: #333;
-}
+    <!-- Google tag (gtag.js) -->
+      <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-PPEZE0S5LB">
+      </script>
+      <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-header {
-  background: linear-gradient(90deg, #0044cc 0%, #0066ff 100%);
-  color: #fff;
-  text-align: center;
-  padding: 20px 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+          gtag('config', 'G-PPEZE0S5LB');
+      </script>
+      <!-- Fim do Google tag (gtag.js) -->
 
-header h1 {
-  font-size: 2em;
-  margin: 0;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 15px 0 0;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-nav ul li a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 6px 12px;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.15);
-}
-
-.banner {
-  background: url("img/blogroturismo-2.jpg") no-repeat center;
-  background-size: cover;
-  height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #ffffff;
-  position: relative;
-}
-
-.banner::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.1));
-  z-index: 1;
-}
-
-.banner h2 {
-  font-size: 2.2em;
-  z-index: 2;
-  position: relative;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-}
-
-.blog {
-  max-width: 800px;
-  margin: auto;
-  padding: 40px 20px;
-}
-
-.blog h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #0044cc;
-}
-
-article {
-  background-color: #ffffff;
-  padding: 24px;
-  margin-bottom: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-
-article h3 {
-  color: #0044cc;
-  margin-top: 0;
-  font-size: 1.4em;
-}
-
-article p {
-  color: #555555;
-  line-height: 1.6;
-}
-
-article a {
-  display: inline-block;
-  margin-top: 12px;
-  color: #007bff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-article a:hover {
-  color: #0056b3;
-  text-decoration: underline;
-}
-
-figcaption {
-  margin-top: 8px;
-  font-style: italic;
-  font-size: 0.9rem;
-  color: #666;
-  text-align: center;
-}
-
-.compartilhar {
-  margin-top: 25px;
-  text-align: center;
-}
-
-.compartilhar p {
-  margin-bottom: 10px;
-  font-weight: bold;
-  color: #333;
-}
-
-.compartilhar a {
-  display: inline-block;
-  padding: 10px 16px;
-  margin: 6px;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  transition: background-color 0.3s ease, transform 0.2s;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.compartilhar a:hover {
-  transform: scale(1.05);
-  opacity: 0.9;
-}
-
-.facebook {
-  background-color: #3b5998;
-}
-
-.instagram {
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-}
-
-.whatsapp {
-  background-color: #25d366;
-}
-
-.calendario,
-.instagram {
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.calendario iframe,
-.instagram iframe {
-  width: 100%;
-  height: 400px;
-  border: none;
-  border-radius: 6px;
-}
-
-footer {
-  background-color: #0044cc;
-  color: #ffffff;
-  text-align: center;
-  padding: 20px 10px;
-  margin-top: 60px;
-  font-size: 0.95rem;
-}
-
-footer a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* WhatsApp Floating Button */
-  .whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 999;
-    background-color: #25d366;
-    padding: 12px;
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    transition: transform 0.3s ease;
-  }
-
-  .whatsapp-float:hover {
-    transform: scale(1.1);
-  }
-
-  .whatsapp-float img {
-    width: 32px;
-    height: 32px;
-  }
-
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 1.7em;
-  }
-
-  .banner h2 {
-    font-size: 1.7em;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .compartilhar a {
-    display: inline-block;
-    margin-bottom: 8px;
-    width: auto;
-  }
-}
-  </style>
-
+      <!-- Meta tags-->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="UTF-8" />
+      <meta name="description" content="Descubra os melhores destinos e eventos com a Rô Turismo e Eventos." />
+      <meta name="keywords" content="turismo, viagens, eventos, destinos" />
+      <link rel="icon" href="../img/icones/favicon.ico" type="image/x-icon" />
+      <!-- Estilos -->
+       <link rel="stylesheet" href="css/blog.css">
+      <link rel="stylesheet" href="css/post.css">
+      <!-- Título da página -->
+      <title>Eventos 2025 | Rô Turismo e Eventos</title>
 </head>
 <body>
 
@@ -317,6 +92,18 @@ footer a:hover {
     <section class="instagram">
       <h2>Nosso Instagram</h2>
       <iframe src="https://www.instagram.com/roturismoeeventos/embed"></iframe>
+      <p class="paragrafo_instagram">
+        <a
+          href="https://www.instagram.com/roturismoeeventos/"
+          target="_blank"
+        >
+          <img
+            class="icon_instagram"
+            src="../img/redes_sociais/icon_instagram.png"
+          />
+          Ver perfil completo do Instagram
+        </a>
+        </p>
     </section>
   </main>
 
