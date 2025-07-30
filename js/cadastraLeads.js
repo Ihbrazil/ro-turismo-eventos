@@ -96,8 +96,8 @@ const Utils = {
 // =========================
 // Configurações do Supabase
 const SUPABASE_CONFIG = {
-  endpoint: 'https://zwvisfrdzizehayydrcg.supabase.co/rest/v1/bd_leads_roturismoeeventos', // URL do Supabase
-  apiKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp3dmlzZnJkeml6ZWhheXlkcmNnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI3NjQ0MjAsImV4cCI6MjA2ODM0MDQyMH0.ctL6jvT0VUsYUF-VZ0i1W449ZX5xDSQBBVHCGmQpckI',
+  endpoint: 'https://jgrxobffzkhfsetgusmu.supabase.co/rest/v1/bd_leads_roturismoeeventos', // URL do Supabase 
+  apiKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpncnhvYmZmemtoZnNldGd1c211Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM5MDEzODAsImV4cCI6MjA2OTQ3NzM4MH0.2CvLIDz-qrwnXPpOVll7SPfJwEZtfswnTeOjLN0OsTY',
   headers: {
     'Content-Type': 'application/json',
     'Prefer': 'return=minimal'
