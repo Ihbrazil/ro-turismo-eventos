@@ -96,8 +96,8 @@ const Utils = {
 // =========================
 // Configurações do Supabase
 const SUPABASE_CONFIG = {
-  endpoint: 'https://zwvisfrdzizehayydrcg.supabase.co/rest/v1/bd_leads_roturismoeeventos', // URL do Supabase
-  apiKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp3dmlzZnJkeml6ZWhheXlkcmNnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI3NjQ0MjAsImV4cCI6MjA2ODM0MDQyMH0.ctL6jvT0VUsYUF-VZ0i1W449ZX5xDSQBBVHCGmQpckI',
+  endpoint: 'https://jgrxobffzkhfsetgusmu.supabase.co/rest/v1/bd_leads_roturismoeeventos', // URL do endpoint Supabase
+  apiKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpncnhvYmZmemtoZnNldGd1c211Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM5MDEzODAsImV4cCI6MjA2OTQ3NzM4MH0.2CvLIDz-qrwnXPpOVll7SPfJwEZtfswnTeOjLN0OsTY',
   headers: {
     'Content-Type': 'application/json',
     'Prefer': 'return=minimal'
@@ -110,6 +110,11 @@ const VALIDATION_CONFIG = {
     minLength: 2,
     maxLength: 100,
     pattern: /^[a-zA-ZÀ-ÿ\s]+$/
+  },
+  email: {
+    minLength: 5,
+    maxLength: 120,
+    pattern: /^[\w-.]+@[\w-]+\.[a-zA-Z]{2,}(\.[a-zA-Z]{2,})?$/
   },
   ddd: {
     minLength: 2,
@@ -130,6 +135,12 @@ const ERROR_MESSAGES = {
     minLength: 'Nome deve ter pelo menos 2 caracteres',
     maxLength: 'Nome deve ter no máximo 100 caracteres',
     pattern: 'Nome deve conter apenas letras e espaços'
+  },
+  email: {
+    required: 'E-mail é obrigatório',
+    minLength: 'E-mail deve ter pelo menos 5 caracteres',
+    maxLength: 'E-mail deve ter no máximo 120 caracteres',
+    pattern: 'E-mail inválido'
   },
   ddd: {
     required: 'DDD é obrigatório',
@@ -250,6 +261,13 @@ const Validator = {
       results.errors.nome = nomeValidation.message;
     }
 
+    // Valida email
+    const emailValidation = this.validateField('email', formData.email);
+    if (!emailValidation.isValid) {
+      results.isValid = false;
+      results.errors.email = emailValidation.message;
+    }
+
     // Valida DDD
     const dddValidation = this.validateField('ddd', formData.ddd);
     if (!dddValidation.isValid) {
@@ -306,7 +324,7 @@ const Validator = {
 
   // Remove todos os erros
   clearAllErrors() {
-    ['nome', 'ddd', 'numero'].forEach(field => {
+    ['nome', 'email', 'ddd', 'numero'].forEach(field => {
       this.clearFieldError(field);
     });
   }
@@ -411,6 +429,7 @@ const API = {
     }
     return {
       nome: Utils.sanitizeName(formData.nome),
+      email: formData.email.trim(),
       telefone: telefoneFormatado
     };
   }
@@ -430,6 +449,7 @@ class LeadCaptureApp {
     this.successMessage = document.getElementById('successMessage');
     this.inputs = {
       nome: document.getElementById('nome'),
+      email: document.getElementById('email'),
       ddd: document.getElementById('ddd'),
       numero: document.getElementById('numero')
     };
@@ -487,6 +507,15 @@ class LeadCaptureApp {
         e.target.value = sanitized;
       }
     });
+
+    // Email: remove espaços
+    this.inputs.email.addEventListener('input', (e) => {
+      const value = e.target.value;
+      const sanitized = value.replace(/\s/g, '');
+      if (value !== sanitized) {
+        e.target.value = sanitized;
+      }
+    });
   }
 
   setupValidation() {
@@ -521,8 +550,9 @@ class LeadCaptureApp {
   getFormData() {
     return {
       nome: this.inputs.nome.value.trim(),
+      email: this.inputs.email.value.trim(),
       ddd: this.inputs.ddd.value.trim(),
-      numero: this.inputs.numero.value //Utils.cleanPhone(this.inputs.numero.value)
+      numero: this.inputs.numero.value
     };
   }
 
